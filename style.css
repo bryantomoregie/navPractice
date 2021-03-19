@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    /* includes padding and border in total width and height  */
+    /* * selects all elements */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
+.item{
+    padding: 8px;
+    border: 3px solid black;
+    /* border-radius: 6px; */
+}
+
+body{
+    margin: 0 auto;
+    /* 0 margin top and bottom */
+    /* the left and right are auto centered inside the width of the parent */
+    /* if I were to set a width on the body, I would see the margin-block-start: */
+}
+
+.container{
+    display: grid;
+    height: 250vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+}
+
+.main{
+    display: grid;
+    height: 100%;
+}
+
+nav{
+    position: fixed;
+    /* position fixed doesnt work well with grid, so I took the nav out of the grid */
+    width: 100%;
+    background-color: mediumslateblue;
+}
+
+.one{
+    background-color: mediumspringgreen;
+}
+
+.two{
+    background-color: mediumvioletred;
+}
+
+.three{
+    background-color: midnightblue;
+}
+
+footer{
+    background-color: tomato;
+
+}
